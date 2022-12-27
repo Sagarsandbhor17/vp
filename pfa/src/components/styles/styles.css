@@ -1,0 +1,47 @@
+Td .TdBefore {
+    display: none;
+  }
+  
+  @media screen and (max-width: 40em) {
+    Table,
+    Thead,
+    Tbody,
+    Th,
+    Td,
+    Tr {
+      display: block;
+    }
+  
+    Thead Tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    Tbody Tr {
+      padding: 0.25em;
+    }
+  
+    Td.pivoted {
+  
+      border: none !important;
+      position: relative;
+      padding-left: calc(50% + 10px) !important;
+      text-align: left !important;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      border-bottom: 1px solid lightgrey !important;
+    }
+  
+    Td .TdBefore {
+      position: absolute;
+      display: block;
+      left: 1rem;
+      width: calc(50% - 20px);
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      text-align: left !important;
+      font-weight: 600;
+    }
+  }
+  
